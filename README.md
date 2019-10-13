@@ -1,4 +1,11 @@
-# albionmarketer
+# AlbionMarketer
+
+AlbionMarketer is a tool that uses the [Albion Online Data](https://www.albion-online-data.com) to calculate the profit by transporting goods from one city to another.
+
+Currently only ressources are available other goods will be added later.
+
+The tool is build with [Vue.js](https://vuejs.org) and can be simply deployed locally.
+
 
 ## Project setup
 ```
