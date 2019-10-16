@@ -56,7 +56,7 @@
     </div>
 
     <div class="item-list">
-      <item v-bind:item="item"  v-for="item in itemList" v-bind:key="item.name"></item>
+      <item v-bind:item="item" v-for="item in itemList" v-bind:key="item.name" v-on:update="updateItem(item)"></item>
     </div>
     <div class="foot-container">
       <button class="button-default" @click="updateAll()">Update all</button>
@@ -102,6 +102,13 @@ export default {
       axios.get(encodeURI(path)).then(response => {
         this.createItem(response.data);
       })
+    },
+
+    updateItem(item) {
+      let path = "https://www.albion-online-data.com/api/v1/stats/Prices/" + item.name + "?locations=" + this.from + ", " + this.to;
+      axios.get(encodeURI(path)).then(response => {
+        this.createItem(response.data);
+      });
     },
 
     updateAll () {

@@ -5,6 +5,20 @@
                 <span class="timeline__year">2019</span>
                 <div class="timeline__box">
                     <div class="timeline__date">
+                        <span class="timeline__day">16</span>
+                        <span class="timeline__month">Oct</span>
+                    </div>
+                    <div class="timeline__post">
+                        <div class="timeline__content">
+                            <ul>
+                                <li>Including taxes into the profit calculation.</li>
+                                <li>Refresh item card easily.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__box">
+                    <div class="timeline__date">
                         <span class="timeline__day">13</span>
                         <span class="timeline__month">Oct</span>
                     </div>
